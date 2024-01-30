@@ -43,7 +43,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onAuthenticationSucceeded(@NonNull BiometricPrompt.AuthenticationResult result) {
                 super.onAuthenticationSucceeded(result);
-                Toast.makeText(MainActivity.this,"Auth succeeded ",Toast.LENGTH_SHORT).show();
+                Toast.makeText(MainActivity.this,"Auth succeeded",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this,Dashboard.class);
+                startActivity(intent);
             }
 
             @Override
