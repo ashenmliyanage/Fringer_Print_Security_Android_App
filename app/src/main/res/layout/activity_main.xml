@@ -11,27 +11,53 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="200px"
         android:src="@drawable/baseline_fingerprint_24"
-        android:layout_centerInParent = "true"/>
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="264dp" />
+
+    <TextView
+        android:id="@+id/tx_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:gravity="center"
+        android:layout_marginTop="18dp"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="371dp" />
+
+    <Button
+        android:id="@+id/btn_fp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/biometric_error_color"
+        android:text="Login FringerPrint"
+        android:gravity="center"
+        android:layout_marginTop="32dp"
+        tools:layout_editor_absoluteX="124dp"
+        tools:layout_editor_absoluteY="416dp" />
+
+    <Button
+        android:id="@+id/btn_fppin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FringerPrint + Pin"
+        android:gravity="center"
+        android:layout_marginTop="38dp"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="495dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/tx_info"
-        />
-
-    <Button
+        android:text="Create by"
+        android:gravity="center"
+        android:layout_marginTop="256dp" />
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Login FringerPrint"
-        android:backgroundTint="@color/biometric_error_color"
-        android:id="@+id/btn_fp"/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="FringerPrint + Pin"
-        android:id="@+id/btn_fppin"/>
-
+        android:text="Ashen Madhushanka"
+        android:gravity="center"
+        android:layout_marginTop="12dp" />
 </androidx.appcompat.widget.LinearLayoutCompat>

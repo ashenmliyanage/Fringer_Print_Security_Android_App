@@ -19,13 +19,19 @@ import java.util.concurrent.Executor;
 public class MainActivity extends AppCompatActivity {
 
     Button btn_fp,btn_fppin;
+    TextView Create,Name;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         btn_fp = findViewById(R.id.btn_fp);
         btn_fppin = findViewById(R.id.btn_fppin);
+
         CheckBioSoppert();
+
         Executor executor = ContextCompat.getMainExecutor(this);
         BiometricPrompt biometricPrompt = new BiometricPrompt(MainActivity.this, executor, new BiometricPrompt.AuthenticationCallback() {
             @Override
